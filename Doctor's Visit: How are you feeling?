@@ -1,0 +1,14 @@
+#100-Days-of-Code
+#Start with a patient greeting
+print("Hello there")
+#Get patient first and last name
+name = input("Please enter your first and last name?\n")
+#Greet patient by name
+print("Hello" + " " + name)
+#Get patient age
+age = input("How old are you?\n")
+#Get patient information on how they feel from 1-10
+input("On a scale of 1-10, with 10 being extremely happy and 1 being extremely sad, how do you feel today?\n")
+#Let patient know the doctor will be with them in a moment
+print("Thank you for that information. The doctor will be here to speak with you in a moment.")
+#https://replit.com/@HackerB98/Doctors-Visit-How-are-you-feeling-today-2#main.py
