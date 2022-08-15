@@ -1,0 +1,33 @@
+#100 Days of Python
+#Tip Calculator
+#If the bill was $150.00, split between 5 people, with 12% tip. 
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+#Format the result to 2 decimal places = 33.60
+#Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.
+#Print welcome message
+print("Welcome to the tip calculator!")
+
+#Ask for bill total and convert input to float/decimal
+bill = float(input("What was the total bill? $"))
+
+#Ask for tip amount and convert input to integer/whole number
+tip = int(input("What percentage tip would you like to give? 5, 10, 12, 15, or 20? (Please don't add the percent sign) "))
+
+#Ask how many people will split the bill and convert input to integer/whole number
+num_of_people = int(input("How many people to split the bill? "))
+
+#Calculate bill with tip
+tip_as_percent = tip / 100
+total_tip_amount = bill * tip_as_percent
+total_bill = bill + total_tip_amount
+
+#Divide total_bill by the number of people paying
+bill_per_person = total_bill / num_of_people
+
+#Round to two decimal places
+final_bill = "{:.2f}".format(bill_per_person)
+
+#Add final bill to a variable and print the variable
+final_bill_message = (f"Each person should pay: ${final_bill}")
+print(final_bill_message)
+#https://replit.com/@HackerB98/Tip-Calculator?v=1
